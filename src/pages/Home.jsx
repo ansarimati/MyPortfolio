@@ -100,13 +100,14 @@ const Home = () => {
                 </Suspense>
             </Canvas>
 
-            <div className={"absolute bottom-2 left-2"}>
+            <div className={"absolute bottom-2 left-2 flex items-center gap-2"}>
                 <img
                     src={!isPlayingMusic ? soundoff : soundon}
                     alt={"sound icon"}
                     className={"w-10 h-10 object-contain cursor-pointer"}
                     onClick={() => setIsPlayingMusic(!isPlayingMusic)}
                 />
+                <h5 className={"blue-gradient_text font-semibold drop-shadow"}>Iqra and Mahams Island</h5>
             </div>
         </section>
     )
